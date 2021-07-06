@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Hello, my site</title>
+        <style>
+            body {
+                width: 90%;
+                margin: 20px auto;
+                font-family: 'Segoe UI', Verdana, sans-serif;
+                background-color: yellow;
+            }
+            h1 {
+                text-align: center;
+            }
+            @keyframes attrseq {
+                from {
+                    opacity: 0;
+                    top: 90%;
+                    /* transform: translate(0px,400px); */
+                }
+                to {
+                    opacity: 1;
+                }
+            }
+            #attr {
+                width: 100%;
+            }
+            #attr img {
+                animation: attrseq 2s forwards;
+                opacity: 0;
+            }
+            #attr img:nth-child(1) {
+                animation-delay: 0.5s;
+            }
+            #attr img:nth-child(2) {
+                animation-delay: 1.0s;
+            }
+            #attr img:nth-child(3) {
+                animation-delay: 1.5s;
+            }
+            #attr img:nth-child(4) {
+                animation-delay: 2.0s;
+            }
+            .calc {
+                position: absolute;
+                transform: rotate(-60deg);
+                top: 30%;
+                left: 10%;
+            }
+            .book {
+                position: absolute;
+                transform: rotate(-20deg);
+                top: 15%;
+                left: 30%;
+            }
+            .paper {
+                position: absolute;
+                transform: rotate(20deg);
+                top: 15%;
+                left: 50%;
+            }
+            .pallette {
+                position: absolute;
+                transform: rotate(60deg);
+                top: 30%;
+                left: 70%;
+            }
+            .pencil {
+                position: absolute;
+                transform: rotate(90deg);
+                top: 50%;
+                left: 50%;
+                margin-right: -50%;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Hello, my site</h1>
+        <div id="attr">
+            <img src="icons_practice_module_4/calc.png" class="calc">
+            <img src="icons_practice_module_4/book.png" class="book">
+            <img src="icons_practice_module_4/paper.png" class="paper">
+            <img src="icons_practice_module_4/pallete.png" class="pallette">
+            <img src="icons_practice_module_4/pencil.png" class="pencil">
+        </div>
+    </body>
+</html>
